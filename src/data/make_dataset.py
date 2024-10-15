@@ -146,6 +146,7 @@ acc_df, gyr_df = read_from_files(files)
 # --------------------------------------------------------------
 data_merged = pd.concat([acc_df.iloc[:,:3], gyr_df], axis=1)
 
+
 #rename columns
 data_merged.columns = [
     "acc_x",
