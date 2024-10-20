@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-
+ 
 ## Load data ---------------------------------------
 
 df = pd.read_pickle("../../data/interim/01_data_processed.pkl")
@@ -112,3 +112,6 @@ for label in labels:
             ax.set_xlabel("Samples")
             plt.title(f"{label}({participant})".title())
             plt.legend()
+
+## combine plots in one figure----------------------------------------------------------------
+
